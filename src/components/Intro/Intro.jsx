@@ -12,7 +12,7 @@ import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -31,17 +31,34 @@ const Intro = () => {
           <span>Shakeel Ayaz</span>
           <span>
             Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            and development, producing the Quality work
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
+        <a
+          href="https://wa.me/923032991954"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="button i-button">Hire me</button>
-        </Link>
+        </a>
+
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/shakeelayazjoya" target="_blank">
+            <img src={Github} alt="GitHub" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammad-shakeel-ayaz-37883b24b/"
+            target="_blank"
+          >
+            <img src={LinkedIn} alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.instagram.com/muhammadshakeelayaz/"
+            target="_blank"
+          >
+            <img src={Instagram} alt="Instagram" />
+          </a>{" "}
         </div>
       </div>
       {/* right image side */}

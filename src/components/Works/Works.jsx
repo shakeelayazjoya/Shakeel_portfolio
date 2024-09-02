@@ -7,7 +7,7 @@ import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -34,9 +34,14 @@ const Works = () => {
             <br />
             ispum is simpley dummy text of printing
           </spane>
-          <Link to="contact" smooth={true} spy={true}>
+          <a
+            href="https://wa.me/923032991954"
+            target="_blank"
+            smooth={true}
+            spy={true}
+          >
             <button className="button s-button">Hire Me</button>
-          </Link>
+          </a>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
